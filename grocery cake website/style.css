@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+   background-color: white;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px silver;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    border-right: 10px solid orange;
+}
+nav h3{
+    font-size: 35px;
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 500;
+    position:relative;
+    top: 4px;
+}
+nav h3 span{
+    color: orange;
+}
+nav .links_container ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: 14px;
+}
+nav .links_container ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color:#333;
+    margin-right: 20px;
+}
+nav .links_container ul li a:hover{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+    transition: background 1s;
+}
+.information_container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+.container-1 .container-2{
+    width: 50%;
+}
+.container-2{
+    float: right;
+    position:relative;
+    top: 100px;
+    right: 50px;
+}
+.container-2 img{
+    width: 500px;
+    border-radius: 50%;
+    border: 10px solid orange;
+    cursor: pointer;
+}
+
+.containers{
+    position:absolute;
+    left: 100px;
+    top: 300px;
+}
+.containers h4{
+    font-size: 30px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.containers h4 span{
+    color: orange;
+}
+.containers h5{
+    font-size: 30px;
+    color: #222;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.search_for_food_available{
+    width: 400px;
+    height: 40px;
+    background-color: whitesmoke;
+    border-radius: 33px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.search_for_food_available input{
+    width: 90%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    padding: 10px;
+}
+.search_for_food_available button{
+    width: 8%;
+    border-top-right-radius:33px ;
+    border-bottom-right-radius: 33px;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+.scroll_up{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orange;
+   
+    top: 590px;
+    float: right;
+    margin-left: 1200px;
+    outline: 0;
+    cursor: pointer;
+    animation: trns 1s linear infinite;
+    position: fixed
+}
+.scroll_up img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes trns{
+    0%{
+        transform: translateY(-10px);
+    }
+}
+#dishes{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.dishes-1{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px silver;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.dishes-1 img{
+    width: 300px;
+    height: 250px;
+}
+.title_name{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.icon_container ul li{
+    list-style: none;
+    display: inline-block;
+}
+.icon_container ul li a{
+    text-decoration: none;
+    color: orange;
+}
+.dishes-1 .price sub::after{
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    content: "";
+    background-color: black;
+    margin-top: 17px;
+    left: 187px;
+}
+.dishes-1 button{
+    margin-top: 14px;
+    width: 150px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dishes-1 button:hover{
+    width: 180px;
+    transition: 1s;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid orange;
+}
+#menu{
+    width: 100%;
+    height: 100vh;
+    margin-top: 150px;
+}
+.Menu_title{
+    position: relative;
+    top: 30px;font-size: 40px;
+    color: #333;
+    text-transform: capitalize;
+}
+.Menu_title span{
+    color: orange;
+}
+.first_icons_images{
+    float: left;
+    position: absolute;
+    margin-left: 20px;
+}
+.first_icons_images ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 40px;
+}
+.first_icons_images ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.first_icons_images ul li a img{
+    width: 100px;
+}
+.active2{
+    position: absolute;
+    float: right;
+    right: 70px;
+    top: 1545px;
+}
+#about{
+width: 100%;
+height: 90vh;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 10px;
+}
+.img_container{
+    position: relative;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+.img_container img{
+    width: 500px;
+}
+.description_container{
+    position: relative;
+    left: 600px;
+    top: 260px;
+}
+.description_container h2{
+    color: orange;
+    font-size: 40px;
+}
+.description_container p{
+    font-size: 14px;
+    color: #333;
+}
+.description_container button{
+    width: 200px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    margin-top: 30px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.description_container button:hover{
+    width: 230px;
+    transition: 3s;
+    background-color: transparent;
+    
+    color: #333;
+    border: 1px solid orange;
+
+}
+#order{
+    width: 100%;
+    height: 80vh;
+   display: flex;
+}
+.container_information_about_order{
+    position: absolute;
+    margin-top: 16rem;
+    margin-left: 2rem;
+}
+.container_information_about_order h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #333;
+}
+.container_information_about_order p{
+    font-size: 12px;
+    color: #333;
+}
+.container_information_about_order ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+.container_information_about_order ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.contact_container{
+    position: relative;
+    left: 670px;
+    top: 150px;
+}
+.contact_container form input{
+    width: 400px;
+    outline: 0;
+    border: 0;
+    background-color: whitesmoke;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+border-radius: 5px;
+}
+.contact_container form textarea{
+    width: 400px;
+    padding: 10px;
+    resize: none;
+    outline: 0;
+    border: 0;
+    background-color: whitesmoke;
+    resize: none;
+    height: 150px;
+}
+.contact_container form button{
+    width: 120px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.contact_container form button:hover{
+    width: 170px;
+    height: 30px;
+    transition: 1s;
+    background-color: transparent;
+    border: 1px solid orange;
+    color: #333;
+}
+#reviews{
+    width: 100%;
+    height: 100vh;
+}
+.title_customers{
+    position:relative;
+    top: 100px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.title_customers span{
+    color: orange;
+}
+.reviews_containers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: absolute;
+    left: 50px;
+    margin-top:120px;
+}
+.container-re{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    box-shadow:2px 2px 2px 2px silver;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.container-re img{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    margin-top: 20px;
+}
+.container-re h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+.container-re .icon_container{
+    margin-top: 10px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: whitesmoke;
+}
+.title{
+    position:relative;
+    top:20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333;
+}
+.title span{
+    color: orange;
+}
+footer .icon_container ul li{
+    margin-top: 60px;
+   
+}
+footer .icon_container ul li a{
+    font-size: 20px;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
